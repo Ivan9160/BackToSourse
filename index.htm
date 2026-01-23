@@ -50,6 +50,14 @@
             transition: all 0.3s ease;
         }
 
+        .warning-box {
+            background-color: #fef2f2;
+            border: 1px solid #fee2e2;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+        }
+
         .animate-fade-in { animation: fadeIn 0.3s ease-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
@@ -122,10 +130,10 @@
                     
                     <div class="inline-flex p-1 bg-gray-200 rounded-xl mb-8">
                         <button onclick="setVersion('web')" id="btn-web" class="px-6 py-2.5 rounded-lg text-sm font-bold transition v-btn-on shadow-sm">
-                            Web / Desktop
+                            Web / Desktop Application
                         </button>
                         <button onclick="setVersion('mac')" id="btn-mac" class="px-6 py-2.5 rounded-lg text-sm font-bold transition v-btn-off">
-                            Mac OS
+                            Mac OS Application
                         </button>
                     </div>
                 </div>
@@ -142,7 +150,7 @@
                     
                     <div class="text-center">
                         <h3 id="video-title" class="font-bold text-xl md:text-2xl text-slate-900">Outlook Web Tutorial</h3>
-                        <p id="video-desc" class="text-slate-500 mt-1">Step-by-step for the modern browser interface.</p>
+                        <p id="video-desc" class="text-slate-500 mt-1">Tutorial for another way of setting up the formatting</p>
                     </div>
 
                     <div class="space-y-4">
@@ -170,13 +178,14 @@
                                     <p class="text-slate-600 text-sm leading-snug">In <span class="font-mono bg-blue-50 text-blue-700 px-1 py-0.5 rounded text-xs font-bold">Conditional Formatting</span>, change specific people to <span class="text-red-600 font-bold underline decoration-red-200">RED</span>.</p>
                                 </div>
                             </div>
-                            <div class="bg-indigo-50 border border-indigo-100 p-6 rounded-2xl mt-4">
-                            <div class="flex gap-3 items-center mb-3">
-                                <i data-lucide="lightbulb" class="w-6 h-6 text-indigo-600"></i>
-                                <h4 class="font-bold text-indigo-900">Pro Tip: "Be updated!</h4>
+
+                            <div class="warning-box">
+                                <div class="flex gap-3 items-center mb-3">
+                                    <i data-lucide="alert-circle" class="w-6 h-6 text-red-600"></i>
+                                    <h4 class="font-bold text-red-900">WARNING!</h4>
+                                </div>
+                                <p class="text-red-800 text-sm leading-relaxed">This way of setting up rules works only on desktop and cannot be easily done on the phone website or mobile application.</p>
                             </div>
-                            <p class="text-indigo-800 text-sm leading-relaxed">Check your e-mails daily! Spend 5 minutes to be up to date and less stressed. ;)</p>
-                        </div>
                         </div>
                     </div>
                 </div>
